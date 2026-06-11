@@ -8,27 +8,36 @@ Production-ready Docker image with:
 - FFmpeg
 - yt-dlp
 
-## Pull
+## Pull Image
 
+```bash
 docker pull tushar9871/node24-playwright-ffmpeg:v1
+```
 
-## Usage
+## Use in Dockerfile
 
+```dockerfile
 FROM tushar9871/node24-playwright-ffmpeg:v1
-
-WORKDIR /app
-
-COPY package*.json ./
-RUN npm ci
-
-COPY . .
-
-CMD ["npm", "start"]
+```
 
 ## Included Software
 
-- Node.js 24
-- Playwright
-- Chromium
-- FFmpeg
-- yt-dlp
+| Component | Included |
+|------------|-----------|
+| Node.js 24 | ✅ |
+| Playwright | ✅ |
+| Chromium | ✅ |
+| FFmpeg | ✅ |
+| yt-dlp | ✅ |
+
+## Use Cases
+
+- Browser Automation
+- Web Scraping
+- Video Processing
+- AI Agents
+- Screenshot Generation
+
+## Docker Hub
+
+https://hub.docker.com/r/tushar9871/node24-playwright-ffmpeg
